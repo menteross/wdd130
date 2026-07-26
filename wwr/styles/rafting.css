@@ -1,12 +1,8 @@
 :root {
-    --primary-color: #055a05;
-    /* forest green */
-    --secondary-color: #f4a261;
-    /* warm sand */
-    --accent1-color: #264653;
-    /* dark slate blue */
+    --primary-color: #446e8a;
+    --secondary-color: #dfa06c;
+    --accent1-color: #437b91;
     --accent2-color: #e9c46a;
-    /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -54,6 +50,14 @@ article {
 
 .hero {
     position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
 }
 
 .hero img {
