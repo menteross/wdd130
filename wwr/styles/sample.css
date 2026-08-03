@@ -1,0 +1,269 @@
+/* ==========================================================================
+   Global & Reset Styles
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3 {
+    color: #0a3663;
+    margin-bottom: 0.75rem;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+header {
+    background-color: #0a3663;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo img {
+    max-height: 60px;
+    width: auto;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00a8e8;
+}
+
+/* ==========================================================================
+   Main Content Layout
+   ========================================================================== */
+.contact-main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.contact-main > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #00a8e8;
+    display: inline-block;
+}
+
+section {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   Company Info & Map Section
+   ========================================================================== */
+.company-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.address-details p {
+    margin-bottom: 0.5rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* ==========================================================================
+   Employee Profiles Section
+   ========================================================================== */
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.employee-card {
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+
+.employee-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+
+.employee-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.employee-card .title {
+    font-style: italic;
+    color: #666666;
+}
+
+/* ==========================================================================
+   Contact Form Styles
+   ========================================================================== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+    outline: none;
+    border-color: #00a8e8;
+    box-shadow: 0 0 5px rgba(0, 168, 232, 0.4);
+}
+
+/* Radio Buttons Fieldset */
+.purpose-group {
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.purpose-group legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio-option label {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Checkbox Option */
+.checkbox-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-item label {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #00a8e8;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0a3663;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    background-color: #0a3663;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #00a8e8;
+    text-decoration: none;
+}
+
+footer .social-links {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ==========================================================================
+   Responsive Design (Mobile Devices)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    .company-info {
+        grid-template-columns: 1fr;
+    }
+}
