@@ -164,6 +164,10 @@ footer {
     border-radius: 4px;
 }
 
+figcaption {
+    color: #446e8a;
+}
+
 /*hero*/
 .hero {
     position: relative;
